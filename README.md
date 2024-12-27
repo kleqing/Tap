@@ -1,2 +1,1 @@
-# Tap
-Jump forever
+- main pages of Tap! 

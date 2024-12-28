@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.2 - Hot Fix] - 2024-12-28
+- **Game startup:** Fixed a build error causing the game not to run when opened.
+
 ## [0.0.1] - 2024-12-28
 
 ### 🎉 Added
@@ -17,11 +20,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Hitbox Errors:** Collision issues occur when the player touches the edge of an object.
 
 ### 🔮 Coming Soon
-- **New Levels:** Exciting challenges to enhance gameplay.
+- **New Levels:** Exciting challenges to enhance gameplay (ETA: January 2025).
 - **Bug Fixes:** Improvements to resolve known issues.
 
 ---
 
 ### 🛠️ How to Contribute
-1. Report bugs or request features via [GitHub Issues](https://github.com/your-repo/issues).
+1. Report bugs or request features via [GitHub Issues](https://github.com/kleqing/Tap/issues).
 2. Follow our contribution guidelines to submit a pull request.

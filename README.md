@@ -59,10 +59,30 @@ To ensure compatibility and maintain quality, please ensure the following when c
 
 If you have any questions or need assistance while contributing, feel free to open an issue or contact us directly.
 
-
 ## Contributors
 
-<td align="center" valign="top" width="14.28%"><a href="https://github.com/kleqing"><img src="https://avatars.githubusercontent.com/u/78801337?v=4?s=100" width="100px;" alt="Pham Khanh Nhan"/><br /><sub><b>Pham Khanh Nhan</b></sub></a><br/><a href="#kleqing" title="Owner, Developer">💻</a></td>
+We appreciate the efforts of everyone who has contributed to making **Tap** better. Here's the list of amazing people behind the project:
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="20%">
+        <a href="https://github.com/kleqing">
+          <img src="https://avatars.githubusercontent.com/u/78801337?v=4?s=100" width="100px;" alt="Pham Khanh Nhan"/>
+          <br />
+          <sub><b>Pham Khanh Nhan</b></sub>
+        </a>
+        <br />
+        <span>Owner, Developer</span> 💻
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+Want to see your name here? Check out the [How to Contribute](#how-to-contribute) section to learn how you can get involved!
+
 
 ## Credits
 

@@ -19,13 +19,13 @@ public class SelectionArrow : MonoBehaviour
         {
             ChangePosition(-1);
         }
-        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             ChangePosition(1);
         }
         
         //* Interaction with the selected option
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             //* Interact
             Interact();
@@ -40,7 +40,7 @@ public class SelectionArrow : MonoBehaviour
         {
             currentOption = options.Length - 1;
         }
-        else if (currentOption >= options.Length - 1)
+        else if (currentOption >= options.Length)
         {
             currentOption = 0;
         }

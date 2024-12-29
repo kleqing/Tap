@@ -88,6 +88,7 @@ Want to see your name here? Check out the [How to Contribute](#how-to-contribute
 
 - [**Unity Store**](https://assetstore.unity.com/?category=2d&free=true&orderBy=1&page=1): All assets used in this project are free assets from Unity Store.
 - [**Jetbrains Rider**](https://www.jetbrains.com/rider/): The IDE used to develop this project.
+- [**.NET**](https://dotnet.microsoft.com/): The primary programming language used to build this project.
 
 ## Download
 

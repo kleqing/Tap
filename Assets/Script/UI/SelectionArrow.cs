@@ -28,6 +28,7 @@ public class SelectionArrow : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             //* Interact
+            Interact();
         }
     }
 

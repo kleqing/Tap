@@ -43,7 +43,6 @@ public class Health : MonoBehaviour
         AddHealth(startingHealthh);
         animator.ResetTrigger("Die");
         animator.Play("Idle");
-    
         GetComponent<Player>().enabled = true;
     }
 }

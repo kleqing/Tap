@@ -18,7 +18,7 @@ Tap is lightweight and runs seamlessly on any operating system that supports the
 
 ## Changelog
 
-- **[0.0.2] - 2024-12-28** - Fix some mirror bug.
+For detailed updates and changes, refer to the [Changelog](./Changelog.md).
 
 ## Supporting OS
 

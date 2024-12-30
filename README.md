@@ -50,14 +50,42 @@ Even if you're not a developer, you can still help by reporting bugs:
 1. **Open an issue**: Visit the [GitHub issues page](https://github.com/kleqing/Tap/issues).
 2. **Describe the bug**: Provide clear details about what went wrong, including steps to reproduce it and any relevant screenshots or logs.
 
-### Requirements for Contributions
+## Building the Code
 
-To ensure compatibility and maintain quality, please ensure the following when contributing:
-- Unity version: **6.0 or higher**
-- JetBrains Rider: **2023 or higher**
-- .NET runtime: **8.0 or higher**
+### 1. Prerequisites
+Ensure you have the following installed before proceeding:
+- **Unity:** Version 6.0 or higher
+- **JetBrains Rider:** Version 2023 or higher (or Visual Studio 2022)
+- **.NET:** Version 8.0 or higher
 
-If you have any questions or need assistance while contributing, feel free to open an issue or contact us directly.
+```bash
+git clone https://github.com/kleqing/Tap
+```
+
+---
+
+### 2. Editing the Game
+Follow these steps to edit the game:
+1. Open **Unity Hub**.
+2. Select **Add Project from Disk**.
+3. Navigate to the **Tap** folder and select it.
+4. Edit the game within the Unity Editor.
+
+---
+
+### 3. Building the Game
+Steps to build the project:
+1. Open the project in **Unity Editor**.
+2. Go to the menu bar and select:
+   - **File** -> **Build Settings** -> **Build**.
+3. Choose your target platform (e.g., Windows, macOS).
+4. Select a folder to save the build.
+
+---
+
+### Notes
+- If you encounter any issues during the build process, please refer to the Unity documentation or check the [GitHub Issues](https://github.com/kleqing/Tap/issues) page for troubleshooting.
+
 
 ## Contributors
 

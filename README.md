@@ -18,7 +18,7 @@ Tap is lightweight and runs seamlessly on any operating system that supports the
 
 ## Changelog
 
-For detailed updates and changes, refer to the [Changelog](./Changelog.md).
+For detailed updates and changes, refer to the [Changelog](./CHANGELOG.md).
 
 ## Supporting OS
 

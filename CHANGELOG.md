@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.3] - 2024-12-30
+
+### 🐞 Bug Fixes
+- **Auto Respawn:** Fixed an issue where the player would automatically respawn after death.
+- **Game Over Screen:** Resolved an issue where the arrow in the Game Over menu could move beyond the intended boundaries.
+- **Screen Boundary:** Fixed a bug where the player could move outside the game screen.
+
+### 🎉 Added
+- **New Level:** Added an empty object as a placeholder for the next level.
+
+### 🐞 Known Issues
+- **Hitbox Errors:** Players may still get stuck when touching the edge of a box collider (potentially a Unity engine behavior).
+- **Camera Movement:** The camera doesn't properly transition between levels on the Y-axis; some frames remain stuck in the previous room.
+- **Game Resolution:** After building the game, the resolution may not fit certain computer screens correctly.
+
+### 🔮 Coming Soon
+- **Background Music:** Immersive background music to enhance the gaming experience.
+- **Stage 2 Completion:** Finalizing and releasing Stage 2 with new challenges.
+- **Additional Features:** More updates and features to come.
+
 ## [0.0.2 - Hot Fix] - 2024-12-28
 - **Game startup:** Fixed a build error causing the game not to run when opened.
 

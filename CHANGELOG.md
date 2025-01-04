@@ -7,16 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.0.4] - 2025-1-3
+## [0.0.4] - 2025-01-04
 
 ### 🎉 Added
-- **New trap:** Arrow trap
+- **Trap:** Arrow trap
+  - Shoots arrows at the player from a distance, adding a new challenge.
+
+### 🐞 Known Issues
+- **Hitbox Errors:** Players may still get stuck when touching the edge of a box collider (likely related to Unity's physics engine).
+- **Camera Movement:** During transitions between levels along the Y-axis, the camera occasionally remains stuck for a few frames in the previous room. (Optimized but not fully resolved.)
+
+### 🛠️ Fixed
+- **Arrow Trap:** Fixed an issue where the arrow only shot once due to improper usage of `activeInHierarchy`.
+- **Game Resolution:** Adjusted settings to improve compatibility with various screen resolutions after building the game.
+
+### 🔮 Coming Soon
+- **Background Music:** Adding immersive tracks to enhance gameplay ambiance.
+- **Stage 2 Completion:** Introducing new challenges and finalizing the second stage.
+- **Pause Menu:** Allowing players to pause and resume the game conveniently.
+- **Startup Screen:** Implementing an introductory screen for a polished game start.
+- **Other Enhancements:** Additional improvements and features to be announced.
 
 ## [0.0.3] - 2024-12-30
 
 ### 🐞 Bug Fixes
 - **Auto Respawn:** Fixed an issue where the player would automatically respawn after death.
-- **Game Over Screen:** Resolved an issue where the arrow in the Game Over menu could move beyond the intended boundaries.
+- **Game Over Screen:** Resolved an issue where the arrow in the Game Over menu could move bey🐞 Known Issues🐞 Known Issuesond the intended boundaries.
 - **Screen Boundary:** Fixed a bug where the player could move outside the game screen.
 
 ### 🎉 Added

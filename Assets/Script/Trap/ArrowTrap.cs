@@ -7,6 +7,7 @@ public class ArrowTrap : MonoBehaviour
     [SerializeField] private GameObject[] Arrow;
     [SerializeField] private Transform firePoint;
     private float CooldownTimer;
+    
     private void Attack()
     {
         CooldownTimer = 0;
@@ -19,7 +20,7 @@ public class ArrowTrap : MonoBehaviour
     {
         for (int i = 0; i < Arrow.Length; i++)
         {
-            if (Arrow[i].activeInHierarchy)
+            if (!Arrow[i].activeInHierarchy)
             {
                 return i;
             }

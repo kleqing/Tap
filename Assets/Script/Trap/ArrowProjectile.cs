@@ -11,7 +11,6 @@ public class ArrowProjectile : DamagePlayer
     {
         lifeTime = 0;
         gameObject.SetActive(true); 
-        
     }
 
     private void Update()
@@ -30,6 +29,5 @@ public class ArrowProjectile : DamagePlayer
     {
         base.OnTriggerEnter2D(other); //* Execute the OnTriggerEnter2D method from the parent class
         gameObject.SetActive(false);
-        
     }
 }

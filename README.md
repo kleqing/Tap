@@ -85,7 +85,7 @@ Steps to build the project:
 
 ### Notes
 - If you encounter any issues during the build process, please refer to the Unity documentation or check the [GitHub Issues](https://github.com/kleqing/Tap/issues) page for troubleshooting.
-
+- Don't asked me about branch since I do it alone. This is just a project for myself and I don't want to branch just for spam `git checkout ...` in terminal
 
 ## Contributors
 

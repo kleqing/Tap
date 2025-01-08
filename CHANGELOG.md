@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.5] - 2025-01-08
+
+### 🎉 Added
+- **New Room:** Introduced Room 3 (still under development).  
+- **New Terrain:** Expanded environments with fresh terrain designs.  
+- **Background Music:** Added "Galaxy Collapse" from Touhou to enhance the atmosphere.  
+- **Pause Menu:** Players can now pause the game and access options seamlessly.  
+
+### 🔄 Updated
+- **Camera System:**  
+  - The camera now dynamically follows the player instead of being fixed.  
+  - Smooth transitions are applied when moving between rooms.  
+
+### 🐞 Fixed
+- **Build Version Issues:** Resolved compatibility and scaling issues in the game build (fix was applied in [0.0.4] but not documented).  
+- **Background Visuals:** Corrected occasional screen scratches affecting the game background.  
+
+### 🐛 Known Bugs
+- **Menu Alignment:** The arrow icons in the pause and dead menus are misaligned with the text.  
+
+### 🛠️ Cannot Fix (Known Unity Issues)
+- **Hitbox Errors:** Players may still get stuck when touching the edges of box colliders. This seems to be related to Unity's physics engine limitations.  
+
+### 🔮 Coming Soon
+- **Stage 2 Completion:** New challenges and exciting gameplay enhancements in the second stage.  
+- **Startup Screen:** Implementing a polished introductory screen for a smoother game launch.  
+- **Additional Features:** Further updates and surprises in upcoming releases!  
+
 ## [0.0.4] - 2025-01-04
 
 ### 🎉 Added

@@ -13,6 +13,13 @@ public class Player : MonoBehaviour
     private Animator anim;
 
     private float horizontalInput;
+    
+    [Header("Double Jump")]
+    [SerializeField] private float jumpTime;
+    private float jumpCount;
+    
+    [Header("SFX")]
+    [SerializeField] private AudioClip jumpSFX;
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -37,8 +44,10 @@ public class Player : MonoBehaviour
         anim.SetBool("Jump", !isGrounded());
 
         //* Jump
-        if (Input.GetButtonDown("Jump") && isGrounded())
+        if (Input.GetButtonDown("Jump"))
         {
+            SoundManager.Instance.PlaySound(jumpSFX);
+            jumpCount = jumpTime;
             Jump();
         }
         
@@ -55,7 +64,26 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+        if (jumpCount <= 0)
+        {
+            return;
+        }
+        else
+        {
+            if (isGrounded())
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+
+            }
+            else
+            {
+                if (jumpCount > 0)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+                    jumpCount--;
+                }
+            }
+        }
     }
     
     private bool isGrounded()

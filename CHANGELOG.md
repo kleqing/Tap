@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.6] - 2025-01-10
+
+### 🎉 Added
+
+- **Enemies:**
+  - **Peashooter:** A new enemy that shoots when the player enters its range.
+
+### 🛠️ Adjustments
+
+- **Player:**
+  - **Double Jump:** Players can now perform a second jump while in mid-air, enhancing mobility.
+
+### 🐞 Fixed
+
+- **Build Version:** Resolved a versioning issue where the project was labeled as `0.0.4` despite the release being `0.0.5`. This has been fully corrected in `0.0.6` by properly committing the `ProjectSettings` files.
+- **ArrowTrap.cs:** Corrected a typo that caused functionality errors in the arrow trap mechanic.
+
+### 🐛 Known Issues
+
+- **Menu Alignment:** Arrow icons in the pause and game-over menus are not properly aligned with the corresponding text.
+
+### 🛠️ Cannot Fix (Unity Engine Limitations)
+
+- **Hitbox Issues:** Players may still occasionally get stuck when touching the edges of box colliders. This appears to be a limitation of Unity's physics engine.
+
+### 🔮 Coming Soon
+
+- **Startup Screen:** A polished introductory screen to improve the game launch experience.
+- **New Traps:**
+  - Introducing spikeheads and additional trap mechanics.
+- **Other Features:** Stay tuned for more exciting updates and enhancements in future releases!
+
 ## [0.0.5] - 2025-01-08
 
 ### 🎉 Added

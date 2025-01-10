@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ArrowTrap : MonoBehaviour
 {
-    [SerializeField] private float attackCooldon;
+    [SerializeField] private float attackCooldown;
     [SerializeField] private GameObject[] Arrow;
     [SerializeField] private Transform firePoint;
     private float CooldownTimer;
@@ -31,7 +31,7 @@ public class ArrowTrap : MonoBehaviour
     private void Update()
     {
         CooldownTimer += Time.deltaTime;
-        if (CooldownTimer >= attackCooldon)
+        if (CooldownTimer >= attackCooldown)
         {
             Attack();
         }

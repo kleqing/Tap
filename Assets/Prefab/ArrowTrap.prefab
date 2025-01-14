@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e0a888d171dc1429847a24bcd7e599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1.2
+  attackCooldown: 1
   Arrow:
   - {fileID: 6188000654855561208}
   - {fileID: 9176356396010743977}

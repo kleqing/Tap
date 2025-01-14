@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.0] - 2025-01-14
+
+### 🚀 Milestone
+- After 6 versions of updates, the game is nearly ready for release! 🎉
+
+---
+
+### 🎉 Added
+
+- **Enemies:**
+  - **Spike Head:** A new enemy that attacks the player when detected.
+- **Main Menu (Startup Screen):** Added a polished main menu for a smoother start to the game.
+
+### 🐞 Fixed
+
+- **Arrow Trap:** Resolved the reported bug. [#2](https://github.com/kleqing/Tap/issues/2)
+
+### 🐛 Known Issues
+
+- **Menu Alignment:** Arrow icons in the pause and game-over menus are misaligned with the corresponding text.  
+- **Multiple Jump Bug:** Players can perform multiple jumps instead of being limited to double jumps, allowing unintended level progression.  
+
+### 🔮 Coming Soon
+
+- **Menu Screen Sound:** Adding background music or sound effects for the menu screen.  
+- **Additional Features:** Stay tuned for more exciting updates and enhancements in future releases!  
+
 ## [0.0.6] - 2025-01-10
 
 ### 🎉 Added

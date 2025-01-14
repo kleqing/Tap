@@ -218,6 +218,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 384
+  jumpTime: 1
+  jumpSFX: {fileID: 0}
 --- !u!114 &3819753294239379667
 MonoBehaviour:
   m_ObjectHideFlags: 0

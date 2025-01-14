@@ -4,14 +4,20 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Game Over")]
     [SerializeField] private GameObject gameOverScreen;
 
     [Header("Pause")]
     [SerializeField] private GameObject pauseScreen;
+    
+    [Header("Main Menu")]
+    [SerializeField] private GameObject mainMenuScreen;
+    
     private void Awake()
     {
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
+        mainMenuScreen.SetActive(false);
     }
 
     public void GameOver()
@@ -19,7 +25,7 @@ public class UIManager : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
     
-    public  void Restart()
+    public void Restart()
     {
         gameOverScreen.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -53,5 +59,15 @@ public class UIManager : MonoBehaviour
                 PauseGame(true);
             }
         }
+    }
+    
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene(1);
     }
 }

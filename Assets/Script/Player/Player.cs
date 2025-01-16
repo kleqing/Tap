@@ -43,11 +43,16 @@ public class Player : MonoBehaviour
         anim.SetBool("Run", horizontalInput != 0 && isGrounded());
         anim.SetBool("Jump", !isGrounded());
 
+        //* Reset jump count
+        if (isGrounded())
+        {
+            jumpCount = jumpTime;
+        }
+        
         //* Jump
         if (Input.GetButtonDown("Jump"))
         {
             SoundManager.Instance.PlaySound(jumpSFX);
-            jumpCount = jumpTime;
             Jump();
         }
         
@@ -64,25 +69,10 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (jumpCount <= 0)
+        if (jumpCount > 0)
         {
-            return;
-        }
-        else
-        {
-            if (isGrounded())
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-
-            }
-            else
-            {
-                if (jumpCount > 0)
-                {
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-                    jumpCount--;
-                }
-            }
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+            jumpCount--;
         }
     }
     

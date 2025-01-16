@@ -28,6 +28,7 @@ public class Health : MonoBehaviour
                 isDead = true;
                 animator.SetTrigger("Die");
                 GetComponent<Player>().enabled = false;
+                gameObject.GetComponent<BoxCollider2D>().sharedMaterial.friction = 0.4f; //* Set friction back to 0.4f
             }
         }
     }

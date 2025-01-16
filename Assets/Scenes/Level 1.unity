@@ -41443,6 +41443,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5288244338371679595, guid: f9aeabde031b1c54e881c1a0ac19bf08, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5449405
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288244338371679595, guid: f9aeabde031b1c54e881c1a0ac19bf08, type: 3}
+      propertyPath: m_Offset.x
+      value: -4.0294895
+      objectReference: {fileID: 0}
     - target: {fileID: 7264747141146412957, guid: f9aeabde031b1c54e881c1a0ac19bf08, type: 3}
       propertyPath: m_Name
       value: Spikes

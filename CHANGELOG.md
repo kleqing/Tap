@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.1] - 2025-01-16
+
+### 🎉 Added
+
+- **Enemies:**
+  - **Saw Trap:** A new trap that moves along a path to hinder the player's progress toward their destination.
+- **Level Completion:**
+  - **Level 1:** The first level is now complete and ready for the transition to Level 2.
+
+### 🔧 Fixed
+
+- **Player Double Jump:** Resolved an issue where the player could jump multiple times instead of the intended double jump. [#1](https://github.com/kleqing/Tap/issues/1)
+- **Screen Resolution:** Adjusted settings to ensure the game runs correctly on all screen resolutions. (This issue was present in earlier 0.0.x versions but is now resolved.)
+
+### 🐛 Known Issues
+
+- **Menu Alignment:** The arrow icons in the pause and game-over menus remain misaligned with the corresponding text. (Fix pending for a future update.)
+
+### 🔮 Coming Soon
+
+- **Menu Screen Sound:** Background music or sound effects for the menu screen.
+- **Level 2:** Development of a new level.
+- **Additional Traps:** Idk which type of trap I should make next:D
+
+
 ## [0.1.0] - 2025-01-14
 
 ### 🚀 Milestone

@@ -1,4 +1,5 @@
 using System;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,7 +18,10 @@ public class UIManager : MonoBehaviour
     {
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
-        mainMenuScreen.SetActive(false);
+        if (mainMenuScreen != null)
+        {
+            mainMenuScreen.SetActive(true);
+        }
     }
 
     public void GameOver()

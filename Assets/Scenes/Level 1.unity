@@ -29737,6 +29737,9 @@ MonoBehaviour:
   gameOverScreen: {fileID: 1790927217}
   pauseScreen: {fileID: 1261784722}
   mainMenuScreen: {fileID: 0}
+  pauseSoundIcon: {fileID: 0}
+  gameOverSoundIcon: {fileID: 0}
+  mainMenuSoundIcon: {fileID: 0}
 --- !u!1001 &1616356111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32277,6 +32280,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 977dde4f393c6ca4a8d1ff7d296dc3ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundIcon: []
+  muteIcon: {fileID: 0}
+  unmuteIcon: {fileID: 0}
 --- !u!82 &1731453240
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32287,7 +32293,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fb38fc890e416374fa0b1ebb12220c61, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fb38fc890e416374fa0b1ebb12220c61, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
@@ -41325,14 +41331,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5182619654571046945, guid: e72fe9061b9c4744083b489cb26d5aba, type: 3}
+      propertyPath: Friction
+      value: 
+      objectReference: {fileID: 6200000, guid: 7e69ecb140e5eb4488f67d92f1164506, type: 2}
     - target: {fileID: 5973779016941215354, guid: e72fe9061b9c4744083b489cb26d5aba, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 9195396453356996801, guid: e72fe9061b9c4744083b489cb26d5aba, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: fbcff8b3d1060fa409331bb10f63d01d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

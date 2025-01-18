@@ -2,6 +2,7 @@ using System;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,13 +15,52 @@ public class UIManager : MonoBehaviour
     [Header("Main Menu")]
     [SerializeField] private GameObject mainMenuScreen;
     
+    [Header("Sound Icon")]
+    [SerializeField] private Image pauseSoundIcon;
+    [SerializeField] private Image gameOverSoundIcon;
+    [SerializeField] private Image mainMenuSoundIcon;
+    
     private void Awake()
     {
-        gameOverScreen.SetActive(false);
-        pauseScreen.SetActive(false);
+        if (gameOverScreen != null)
+        {
+            gameOverScreen.SetActive(false);
+        }
+        if (pauseScreen != null)
+        {
+            pauseScreen.SetActive(false);
+        }
         if (mainMenuScreen != null)
         {
             mainMenuScreen.SetActive(true);
+        }
+        if (gameOverSoundIcon != null)
+        {
+            BackgroundMusic.Instance?.RegisterSoundIcon(gameOverSoundIcon);
+        }
+        if (pauseSoundIcon != null)
+        {
+            BackgroundMusic.Instance?.RegisterSoundIcon(pauseSoundIcon);
+        }
+        if (mainMenuSoundIcon != null)
+        {
+            BackgroundMusic.Instance?.RegisterSoundIcon(mainMenuSoundIcon);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (pauseSoundIcon != null)
+        {
+            BackgroundMusic.Instance?.UnregisterSoundIcon(pauseSoundIcon);
+        }
+        if (gameOverSoundIcon != null)
+        {
+            BackgroundMusic.Instance?.UnregisterSoundIcon(gameOverSoundIcon);
+        }
+        if (mainMenuSoundIcon != null)
+        {
+            BackgroundMusic.Instance?.UnregisterSoundIcon(mainMenuSoundIcon);
         }
     }
 
@@ -31,6 +71,7 @@ public class UIManager : MonoBehaviour
     
     public void Restart()
     {
+        Time.timeScale = 1;
         gameOverScreen.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -73,5 +114,10 @@ public class UIManager : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void MuteBGM()
+    {
+        BackgroundMusic.Instance?.Mute(0.2f);
     }
 }

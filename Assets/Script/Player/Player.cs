@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         //* Jump
         if (Input.GetButtonDown("Jump"))
         {
-            SoundManager.Instance.PlaySound(jumpSFX);
+            SFX.Instance.PlaySound(jumpSFX);
             Jump();
         }
         

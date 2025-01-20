@@ -15,10 +15,14 @@ public class UIManager : MonoBehaviour
     [Header("Main Menu")]
     [SerializeField] private GameObject mainMenuScreen;
     
+    [Header("Next Level")]
+    [SerializeField] private GameObject nextLevelScreen;
+    
     [Header("Sound Icon")]
     [SerializeField] private Image pauseSoundIcon;
     [SerializeField] private Image gameOverSoundIcon;
     [SerializeField] private Image mainMenuSoundIcon;
+    [SerializeField] private Image nextLevelSoundIcon;
     
     private void Awake()
     {
@@ -46,6 +50,14 @@ public class UIManager : MonoBehaviour
         {
             BackgroundMusic.Instance?.RegisterSoundIcon(mainMenuSoundIcon);
         }
+        if (nextLevelScreen != null)
+        {
+            nextLevelScreen.SetActive(false);
+        }
+        if (nextLevelSoundIcon != null)
+        {
+            BackgroundMusic.Instance?.RegisterSoundIcon(nextLevelSoundIcon);
+        }
     }
 
     private void OnDestroy()
@@ -61,6 +73,10 @@ public class UIManager : MonoBehaviour
         if (mainMenuSoundIcon != null)
         {
             BackgroundMusic.Instance?.UnregisterSoundIcon(mainMenuSoundIcon);
+        }
+        if (nextLevelSoundIcon != null)
+        {
+            BackgroundMusic.Instance?.UnregisterSoundIcon(nextLevelSoundIcon);
         }
     }
 
@@ -113,11 +129,25 @@ public class UIManager : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        if (PlayerPrefs.HasKey("SavedScene"))
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     public void MuteBGM()
     {
         BackgroundMusic.Instance?.Mute(0.2f);
+    }
+
+    public void NextLevel()
+    {
+        Time.timeScale = 0;
+        nextLevelScreen.SetActive(true);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

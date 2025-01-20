@@ -53,7 +53,7 @@ public class Peashooter : MonoBehaviour
     {
         cooldownTimer = 0;
         Bullets[FindBullet()].transform.position = firepoint.position;
-        Bullets[FindBullet()].GetComponent<PeashooterProjecile>().ActiveProjectile(Mathf.Sign(transform.localScale.x));
+        Bullets[FindBullet()].GetComponent<PeashooterProjectile>().ActiveProjectile(Mathf.Sign(transform.localScale.x));
     }
     
     private int FindBullet()

@@ -15,7 +15,6 @@ public class BackgroundMusic : MonoBehaviour
 
     private void Awake()
     {
-        source = GetComponent<AudioSource>();
         
         if (Instance == null)
         {
@@ -26,6 +25,13 @@ public class BackgroundMusic : MonoBehaviour
         {
             Destroy(gameObject);
             return;
+        }
+        
+        source = GetComponent<AudioSource>();
+        
+        if (!source.isPlaying)
+        {
+            source.Play();
         }
     }
     

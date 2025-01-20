@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class PeashooterProjecile : DamagePlayer
+public class PeashooterProjectile : DamagePlayer
 {
 	[SerializeField] private float speed;
 	[SerializeField] private float resetTime;

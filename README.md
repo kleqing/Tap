@@ -83,6 +83,21 @@ Steps to build the project:
 
 ---
 
+## Download the game
+
+~~Currently, Tap is in its **pre-release** phase~~ Tap **1.0.0** finally out. You can try the latest version by downloading it directly from our [GitHub Releases](https://github.com/kleqing/Tap/releases).
+
+> Note: Pre-release versions may contain experimental features or bugs. We appreciate your feedback to help improve the game!
+
+[![Github pre-release](https://img.shields.io/github/v/release/kleqing/Tap?include_prereleases&labelColor=282c34&logo=GitHub&style=for-the-badge)](https://github.com/kleqing/Tap/releases)
+
+### **How to Play**
+1. Download the latest release from the link above.
+2. Unzip the file.
+3. Run `Tap.exe`.
+4. Enjoy the game! 🎮
+
+
 ### Notes
 - If you encounter any issues during the build process, please refer to the Unity documentation or check the [GitHub Issues](https://github.com/kleqing/Tap/issues) page for troubleshooting.
 - Don't asked me about branch since I do it alone. This is just a project for myself and I don't want to branch just for spam `git checkout ...` in terminal
@@ -114,14 +129,9 @@ Want to see your name here? Check out the [How to Contribute](#how-to-contribute
 
 ## Credits
 
+- [**Unity**](https://unity.com): The ultimate tools to create a game
 - [**Unity Store**](https://assetstore.unity.com/?category=2d&free=true&orderBy=1&page=1): All assets used in this project are free assets from Unity Store.
 - [**Jetbrains Rider**](https://www.jetbrains.com/rider/): The IDE used to develop this project.
 - [**.NET**](https://dotnet.microsoft.com/): The primary programming language used to build this project.
 
-## Download
 
-Currently, Tap is in its **pre-release** phase. You can try the latest version by downloading it directly from our [GitHub Releases](https://github.com/kleqing/Tap/releases).
-
-> Note: Pre-release versions may contain experimental features or bugs. We appreciate your feedback to help improve the game!
-
-[![Github pre-release](https://img.shields.io/github/v/release/kleqing/Tap?include_prereleases&labelColor=282c34&logo=GitHub&style=for-the-badge)](https://github.com/kleqing/Tap/releases)

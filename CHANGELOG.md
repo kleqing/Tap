@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## **Changelog - [1.0.0] (2025-01-20)** 🎉 *Initial Release*
+
+### **✨ New Features**
+
+- **Flag:** Added an endpoint to the room, marking the end of a level.
+- **Mute/Unmute Sound:** Implemented sound toggle functionality in both the menu and pause menu.
+- **Prefabs:** Introduced various prefabs for developers to quickly create new levels or extend functionality.
+
+### **🔧 Bug Fixes**
+
+- **Game Freeze on Restart:** Resolved an issue where the game would freeze upon restarting. [#5](https://github.com/kleqing/Tap/issues/5)
+- **Pause/Unpause Issue:** Fixed a bug where the player couldn't move after resuming the game. [#4](https://github.com/kleqing/Tap/issues/4)
+- **Player Friction:** Fixed the player getting stuck on objects when touching edges. [#3](https://github.com/kleqing/Tap/issues/3)
+- **Background Music (BGM):** Fixed an issue where music would replay unnecessarily upon restarting or transitioning to a new scene.
+
+### **🐛 Known Issues**
+
+- **No known issues** at the moment. Everything seems to be working as expected.
+
+### **🔮 Coming Soon**
+
+- **Level 2:** Development of an entirely new level is underway (the current Level 2 is just a duplicate of Level 1).  
+- **Additional Traps:** Idk which type of trap I should make next:D
+
 ## [0.1.1] - 2025-01-16
 
 ### 🎉 Added

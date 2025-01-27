@@ -124,11 +124,13 @@ public class UIManager : MonoBehaviour
     
     public void MainMenu()
     {
+        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(0);
     }
 
     public void Play()
     {
+        Time.timeScale = 1;
         if (PlayerPrefs.HasKey("SavedScene"))
         {
             SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));

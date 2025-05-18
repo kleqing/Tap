@@ -39499,6 +39499,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 1832954568023313744, guid: 9aa493d871ad9544db095ee7c3c675f3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -665
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832954568023313744, guid: 9aa493d871ad9544db095ee7c3c675f3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -428
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039500012572623947, guid: 9aa493d871ad9544db095ee7c3c675f3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 823
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039500012572623947, guid: 9aa493d871ad9544db095ee7c3c675f3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 407
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685118576300588535, guid: 9aa493d871ad9544db095ee7c3c675f3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5881628805547607566, guid: 9aa493d871ad9544db095ee7c3c675f3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -39583,6 +39603,14 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 164361875}
+    - target: {fileID: 7924732368499307499, guid: 9aa493d871ad9544db095ee7c3c675f3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 693
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924732368499307499, guid: 9aa493d871ad9544db095ee7c3c675f3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -428
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
